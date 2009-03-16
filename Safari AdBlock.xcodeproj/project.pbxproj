@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		5BB590730E048EAF0003807F /* Safari AdBlock InputManager */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5BB590760E048ED20003807F /* Build configuration list for PBXAggregateTarget "Safari AdBlock InputManager" */;
+			buildPhases = (
+				5BB590930E0490580003807F /* Make installer and dmg */,
+				5BF407F70E09BA2100134021 /* Make appcast */,
+			);
+			dependencies = (
+				5BB590780E048EE60003807F /* PBXTargetDependency */,
+			);
+			name = "Safari AdBlock InputManager";
+			productName = "Safari AdBlock InputManager";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		5B2961260D6AD6A300C6F7AE /* SafariAdBlockLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2961250D6AD6A300C6F7AE /* SafariAdBlockLoader.m */; };
+		5B29612E0D6AD82100C6F7AE /* ABButtonBarBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A8F110CE37E6600E0231E /* ABButtonBarBackgroundView.m */; };
+		5B29612F0D6AD82100C6F7AE /* ABButtonBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B699F5F0D2CE6C000E7E2D2 /* ABButtonBarButton.m */; };
+		5B2961300D6AD82100C6F7AE /* ABController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B01F3560CD2613100FA4A3C /* ABController.m */; };
+		5B2961310D6AD82100C6F7AE /* ABHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B522A380CFDE2890051F6C3 /* ABHelper.m */; };
+		5B2961320D6AD82100C6F7AE /* ABPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3D6520CD1F5CF00DBD48A /* ABPreferences.m */; };
+		5B2961330D6AD82100C6F7AE /* ABPreferencesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3D66D0CD1F6AB00DBD48A /* ABPreferencesModule.m */; };
+		5B2961340D6AD82100C6F7AE /* ABRuleEditorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9AE400D3B82A100B87DDB /* ABRuleEditorDelegate.m */; };
+		5B2961350D6AD82100C6F7AE /* ABSubscriptionEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B22A31A0D47CABD00AAA561 /* ABSubscriptionEditorController.m */; };
+		5B2961370D6AD82100C6F7AE /* ABToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB555500D50AE6600295A82 /* ABToolbarController.m */; };
+		5B2961380D6AD82100C6F7AE /* ABURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B22A2920D47B84000AAA561 /* ABURLProtocol.m */; };
+		5B2961390D6AD82100C6F7AE /* ABValueTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B01F2E20CD2581B00FA4A3C /* ABValueTransformers.m */; };
+		5B29613B0D6AD82100C6F7AE /* NSArray+ABArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B287B360D034FCA00FD360A /* NSArray+ABArray.m */; };
+		5B29613C0D6AD82100C6F7AE /* NSString+ABString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7F07720CF72728008FD15C /* NSString+ABString.m */; };
+		5B29613D0D6AD82F00C6F7AE /* Minus.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5B9A8ED50CE3722800E0231E /* Minus.tiff */; };
+		5B29613E0D6AD82F00C6F7AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		5B29613F0D6AD82F00C6F7AE /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B01F32A0CD25F4700FA4A3C /* Defaults.plist */; };
+		5B2961400D6AD82F00C6F7AE /* Plus.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5B9A8EC80CE3720200E0231E /* Plus.tiff */; };
+		5B2961410D6AD82F00C6F7AE /* PlusPressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5B9A8EC90CE3720200E0231E /* PlusPressed.tiff */; };
+		5B2961420D6AD82F00C6F7AE /* MinusPressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5B9A8ED60CE3722800E0231E /* MinusPressed.tiff */; };
+		5B2961430D6AD82F00C6F7AE /* ActionPressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5B9A8EE30CE3725700E0231E /* ActionPressed.tiff */; };
+		5B2961440D6AD82F00C6F7AE /* Action.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5B9A8EE40CE3725700E0231E /* Action.tiff */; };
+		5B2961450D6AD82F00C6F7AE /* ButtonBarBackground.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5B9A8F180CE3801100E0231E /* ButtonBarBackground.tiff */; };
+		5B2961460D6AD82F00C6F7AE /* Subscriptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B8CAC080CFF699E00AE570B /* Subscriptions.plist */; };
+		5B2961470D6AD82F00C6F7AE /* ABPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 5B699F720D2CE7DC00E7E2D2 /* ABPreferences.nib */; };
+		5B2961480D6AD82F00C6F7AE /* ButtonBarButton.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5BB98A7C0D368B3400550C12 /* ButtonBarButton.tiff */; };
+		5B2961490D6AD82F00C6F7AE /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B22A2FB0D47C70300AAA561 /* Cross.png */; };
+		5B29614A0D6AD82F00C6F7AE /* Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B22A2FC0D47C70300AAA561 /* Check.png */; };
+		5B29614B0D6AD82F00C6F7AE /* uninstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5B03DCBD0D4E376F00EAFBCF /* uninstall.sh */; };
+		5B29614F0D6AD87F00C6F7AE /* RegexKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B35562C0D4F802C00218F4A /* RegexKit.framework */; };
+		5B29616B0D6ADA7800C6F7AE /* RegexKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B35562C0D4F802C00218F4A /* RegexKit.framework */; };
+		5B29616C0D6ADA7800C6F7AE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA3D5F90CD1EFF100DBD48A /* WebKit.framework */; };
+		5B29616D0D6ADA7800C6F7AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		5B2998F20DE755B40005CEF3 /* LoadProgressMonitor+ABBlockWebResourceLoadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2998F10DE755B40005CEF3 /* LoadProgressMonitor+ABBlockWebResourceLoadDelegate.m */; };
+		5B2999700DE75C4B0005CEF3 /* LocationChangeHandler+ABBlockWebFrameLoadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B29996F0DE75C4B0005CEF3 /* LocationChangeHandler+ABBlockWebFrameLoadDelegate.m */; };
+		5B470B6F0E2413EC00EC8565 /* NSBundle+ABBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B470B6E0E2413EC00EC8565 /* NSBundle+ABBundle.m */; };
+		5B6513090F65199A0043B788 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5B6513070F6519900043B788 /* dsa_pub.pem */; };
+		5BB3A6340D799C7500FF0BC5 /* Safari AdBlock.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B29616E0D6ADA7800C6F7AE /* Safari AdBlock.bundle */; };
+		5BB4EF350DEBE80300CF9941 /* ToolbarOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB4EF340DEBE80300CF9941 /* ToolbarOn.png */; };
+		5BB4EF380DEBE89D00CF9941 /* ToolbarOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB4EF370DEBE89D00CF9941 /* ToolbarOff.png */; };
+		5BE79AB80F6509B9006FDC6D /* SafariAdBlock.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5BE79AB50F650993006FDC6D /* SafariAdBlock.icns */; };
+		5BE79ABA0F6509BD006FDC6D /* SafariAdBlock.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5BE79AB50F650993006FDC6D /* SafariAdBlock.icns */; };
+		5BF408130E09CD9700134021 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF408120E09CD9700134021 /* Sparkle.framework */; };
+		5BF4083E0E09CDAE00134021 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BF408120E09CD9700134021 /* Sparkle.framework */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B2961620D6AD90F00C6F7AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B2961100D6AD56800C6F7AE;
+			remoteInfo = "Safari AdBlock";
+		};
+		5BB590770E048EE60003807F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = "Safari AdBlock Loader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B2961600D6AD8F400C6F7AE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5BB3A6340D799C7500FF0BC5 /* Safari AdBlock.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2961610D6AD8F400C6F7AE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5BF4083E0E09CDAE00134021 /* Sparkle.framework in CopyFiles */,
+				5B29614F0D6AD87F00C6F7AE /* RegexKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* Safari AdBlock_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Safari AdBlock_Prefix.pch"; path = "Sources/Safari AdBlock_Prefix.pch"; sourceTree = "<group>"; };
+		5B01F2E10CD2581B00FA4A3C /* ABValueTransformers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABValueTransformers.h; path = Sources/ABValueTransformers.h; sourceTree = "<group>"; };
+		5B01F2E20CD2581B00FA4A3C /* ABValueTransformers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABValueTransformers.m; path = Sources/ABValueTransformers.m; sourceTree = "<group>"; };
+		5B01F32A0CD25F4700FA4A3C /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = Resources/Defaults.plist; sourceTree = "<group>"; };
+		5B01F3550CD2613100FA4A3C /* ABController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABController.h; path = Sources/ABController.h; sourceTree = "<group>"; };
+		5B01F3560CD2613100FA4A3C /* ABController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABController.m; path = Sources/ABController.m; sourceTree = "<group>"; };
+		5B01F3650CD2649C00FA4A3C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Sources/Constants.h; sourceTree = "<group>"; };
+		5B03DCBD0D4E376F00EAFBCF /* uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = uninstall.sh; path = Resources/uninstall.sh; sourceTree = "<group>"; };
+		5B1D825D0CDBCF5F0096C72B /* Info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Info; path = Resources/Info; sourceTree = "<group>"; };
+		5B22A2910D47B84000AAA561 /* ABURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABURLProtocol.h; path = Sources/ABURLProtocol.h; sourceTree = "<group>"; };
+		5B22A2920D47B84000AAA561 /* ABURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABURLProtocol.m; path = Sources/ABURLProtocol.m; sourceTree = "<group>"; };
+		5B22A2FB0D47C70300AAA561 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cross.png; path = Resources/Cross.png; sourceTree = "<group>"; };
+		5B22A2FC0D47C70300AAA561 /* Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Check.png; path = Resources/Check.png; sourceTree = "<group>"; };
+		5B22A3190D47CABD00AAA561 /* ABSubscriptionEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABSubscriptionEditorController.h; path = Sources/ABSubscriptionEditorController.h; sourceTree = "<group>"; };
+		5B22A31A0D47CABD00AAA561 /* ABSubscriptionEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABSubscriptionEditorController.m; path = Sources/ABSubscriptionEditorController.m; sourceTree = "<group>"; };
+		5B287B350D034FCA00FD360A /* NSArray+ABArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+ABArray.h"; path = "Sources/NSArray+ABArray.h"; sourceTree = "<group>"; };
+		5B287B360D034FCA00FD360A /* NSArray+ABArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ABArray.m"; path = "Sources/NSArray+ABArray.m"; sourceTree = "<group>"; };
+		5B287BC70D0357FF00FD360A /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = Resources/Credits.rtf; sourceTree = "<group>"; };
+		5B287CC80D04BCE600FD360A /* ABButtonBarTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ABButtonBarTest.xib; path = Resources/ABButtonBarTest.xib; sourceTree = "<group>"; };
+		5B2961240D6AD6A300C6F7AE /* SafariAdBlockLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SafariAdBlockLoader.h; path = Sources/SafariAdBlockLoader.h; sourceTree = "<group>"; };
+		5B2961250D6AD6A300C6F7AE /* SafariAdBlockLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SafariAdBlockLoader.m; path = Sources/SafariAdBlockLoader.m; sourceTree = "<group>"; };
+		5B2961640D6AD99200C6F7AE /* Safari AdBlock Loader.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safari AdBlock Loader.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2961660D6AD9B900C6F7AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		5B29616E0D6ADA7800C6F7AE /* Safari AdBlock.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safari AdBlock.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2998F00DE755B40005CEF3 /* LoadProgressMonitor+ABBlockWebResourceLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LoadProgressMonitor+ABBlockWebResourceLoadDelegate.h"; path = "Sources/LoadProgressMonitor+ABBlockWebResourceLoadDelegate.h"; sourceTree = "<group>"; };
+		5B2998F10DE755B40005CEF3 /* LoadProgressMonitor+ABBlockWebResourceLoadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LoadProgressMonitor+ABBlockWebResourceLoadDelegate.m"; path = "Sources/LoadProgressMonitor+ABBlockWebResourceLoadDelegate.m"; sourceTree = "<group>"; };
+		5B29996E0DE75C4B0005CEF3 /* LocationChangeHandler+ABBlockWebFrameLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LocationChangeHandler+ABBlockWebFrameLoadDelegate.h"; path = "Sources/LocationChangeHandler+ABBlockWebFrameLoadDelegate.h"; sourceTree = "<group>"; };
+		5B29996F0DE75C4B0005CEF3 /* LocationChangeHandler+ABBlockWebFrameLoadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LocationChangeHandler+ABBlockWebFrameLoadDelegate.m"; path = "Sources/LocationChangeHandler+ABBlockWebFrameLoadDelegate.m"; sourceTree = "<group>"; };
+		5B35562C0D4F802C00218F4A /* RegexKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RegexKit.framework; path = "Third-party/RegexKit.framework"; sourceTree = "<group>"; };
+		5B470B6D0E2413EC00EC8565 /* NSBundle+ABBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+ABBundle.h"; path = "Sources/NSBundle+ABBundle.h"; sourceTree = "<group>"; };
+		5B470B6E0E2413EC00EC8565 /* NSBundle+ABBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+ABBundle.m"; path = "Sources/NSBundle+ABBundle.m"; sourceTree = "<group>"; };
+		5B522A370CFDE2890051F6C3 /* ABHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABHelper.h; path = Sources/ABHelper.h; sourceTree = "<group>"; };
+		5B522A380CFDE2890051F6C3 /* ABHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABHelper.m; path = Sources/ABHelper.m; sourceTree = "<group>"; };
+		5B6513070F6519900043B788 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Installer/dsa_pub.pem; sourceTree = "<group>"; };
+		5B699F5E0D2CE6C000E7E2D2 /* ABButtonBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABButtonBarButton.h; path = Sources/ABButtonBarButton.h; sourceTree = "<group>"; };
+		5B699F5F0D2CE6C000E7E2D2 /* ABButtonBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABButtonBarButton.m; path = Sources/ABButtonBarButton.m; sourceTree = "<group>"; };
+		5B699F720D2CE7DC00E7E2D2 /* ABPreferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = ABPreferences.nib; path = Resources/ABPreferences.nib; sourceTree = "<group>"; };
+		5B7F07710CF72728008FD15C /* NSString+ABString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ABString.h"; path = "Sources/NSString+ABString.h"; sourceTree = "<group>"; };
+		5B7F07720CF72728008FD15C /* NSString+ABString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ABString.m"; path = "Sources/NSString+ABString.m"; sourceTree = "<group>"; };
+		5B8CAC080CFF699E00AE570B /* Subscriptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Subscriptions.plist; path = Resources/Subscriptions.plist; sourceTree = "<group>"; };
+		5B999A200EDF2596004747E0 /* ABUserDefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABUserDefaultsController.h; path = Sources/ABUserDefaultsController.h; sourceTree = "<group>"; };
+		5B999A210EDF2596004747E0 /* ABUserDefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABUserDefaultsController.m; path = Sources/ABUserDefaultsController.m; sourceTree = "<group>"; };
+		5B9A8EC80CE3720200E0231E /* Plus.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Plus.tiff; path = Resources/Plus.tiff; sourceTree = "<group>"; };
+		5B9A8EC90CE3720200E0231E /* PlusPressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = PlusPressed.tiff; path = Resources/PlusPressed.tiff; sourceTree = "<group>"; };
+		5B9A8ED50CE3722800E0231E /* Minus.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Minus.tiff; path = Resources/Minus.tiff; sourceTree = "<group>"; };
+		5B9A8ED60CE3722800E0231E /* MinusPressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = MinusPressed.tiff; path = Resources/MinusPressed.tiff; sourceTree = "<group>"; };
+		5B9A8EE30CE3725700E0231E /* ActionPressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = ActionPressed.tiff; path = Resources/ActionPressed.tiff; sourceTree = "<group>"; };
+		5B9A8EE40CE3725700E0231E /* Action.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Action.tiff; path = Resources/Action.tiff; sourceTree = "<group>"; };
+		5B9A8F100CE37E6600E0231E /* ABButtonBarBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABButtonBarBackgroundView.h; path = Sources/ABButtonBarBackgroundView.h; sourceTree = "<group>"; };
+		5B9A8F110CE37E6600E0231E /* ABButtonBarBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABButtonBarBackgroundView.m; path = Sources/ABButtonBarBackgroundView.m; sourceTree = "<group>"; };
+		5B9A8F180CE3801100E0231E /* ButtonBarBackground.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = ButtonBarBackground.tiff; path = Resources/ButtonBarBackground.tiff; sourceTree = "<group>"; };
+		5BA3D5550CD1EFA200DBD48A /* Safari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Safari.h; path = Sources/Safari.h; sourceTree = "<group>"; };
+		5BA3D5F90CD1EFF100DBD48A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		5BA3D6510CD1F5CF00DBD48A /* ABPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPreferences.h; path = Sources/ABPreferences.h; sourceTree = "<group>"; };
+		5BA3D6520CD1F5CF00DBD48A /* ABPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPreferences.m; path = Sources/ABPreferences.m; sourceTree = "<group>"; };
+		5BA3D6540CD1F60800DBD48A /* NSPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSPreferences.h; path = Sources/NSPreferences.h; sourceTree = "<group>"; };
+		5BA3D66C0CD1F6AB00DBD48A /* ABPreferencesModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPreferencesModule.h; path = Sources/ABPreferencesModule.h; sourceTree = "<group>"; };
+		5BA3D66D0CD1F6AB00DBD48A /* ABPreferencesModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPreferencesModule.m; path = Sources/ABPreferencesModule.m; sourceTree = "<group>"; };
+		5BB4EF340DEBE80300CF9941 /* ToolbarOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ToolbarOn.png; path = Resources/ToolbarOn.png; sourceTree = "<group>"; };
+		5BB4EF370DEBE89D00CF9941 /* ToolbarOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ToolbarOff.png; path = Resources/ToolbarOff.png; sourceTree = "<group>"; };
+		5BB5554F0D50AE6600295A82 /* ABToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABToolbarController.h; path = Sources/ABToolbarController.h; sourceTree = "<group>"; };
+		5BB555500D50AE6600295A82 /* ABToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABToolbarController.m; path = Sources/ABToolbarController.m; sourceTree = "<group>"; };
+		5BB98A7C0D368B3400550C12 /* ButtonBarButton.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = ButtonBarButton.tiff; path = Resources/ButtonBarButton.tiff; sourceTree = "<group>"; };
+		5BE79AB50F650993006FDC6D /* SafariAdBlock.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = SafariAdBlock.icns; path = Resources/SafariAdBlock.icns; sourceTree = "<group>"; };
+		5BF408120E09CD9700134021 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "Third-party/Sparkle.framework"; sourceTree = "<group>"; };
+		5BF9AE400D3B82A100B87DDB /* ABRuleEditorDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABRuleEditorDelegate.m; path = Sources/ABRuleEditorDelegate.m; sourceTree = "<group>"; };
+		5BF9AE410D3B82A100B87DDB /* ABRuleEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABRuleEditorDelegate.h; path = Sources/ABRuleEditorDelegate.h; sourceTree = "<group>"; };
+		8D5B49B7048680CD000E48DA /* LoaderInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LoaderInfo.plist; path = Resources/LoaderInfo.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B29610F0D6AD56800C6F7AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B29616B0D6ADA7800C6F7AE /* RegexKit.framework in Frameworks */,
+				5B29616C0D6ADA7800C6F7AE /* WebKit.framework in Frameworks */,
+				5B29616D0D6ADA7800C6F7AE /* Cocoa.framework in Frameworks */,
+				5BF408130E09CD9700134021 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Safari AdBlock */ = {
+			isa = PBXGroup;
+			children = (
+				5B2961230D6AD64C00C6F7AE /* Safari AdBlock */,
+				5B2961220D6AD64000C6F7AE /* Safari AdBlock Loader */,
+				5B2961650D6AD99200C6F7AE /* Products */,
+			);
+			name = "Safari AdBlock";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B287BC70D0357FF00FD360A /* Credits.rtf */,
+				5B699F720D2CE7DC00E7E2D2 /* ABPreferences.nib */,
+				5B287CC80D04BCE600FD360A /* ABButtonBarTest.xib */,
+				5B01F32A0CD25F4700FA4A3C /* Defaults.plist */,
+				5B6513070F6519900043B788 /* dsa_pub.pem */,
+				5B8CAC080CFF699E00AE570B /* Subscriptions.plist */,
+				5B2961660D6AD9B900C6F7AE /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				5B9A8EE40CE3725700E0231E /* Action.tiff */,
+				5B9A8EE30CE3725700E0231E /* ActionPressed.tiff */,
+				5B9A8F180CE3801100E0231E /* ButtonBarBackground.tiff */,
+				5BB98A7C0D368B3400550C12 /* ButtonBarButton.tiff */,
+				5B22A2FC0D47C70300AAA561 /* Check.png */,
+				5B22A2FB0D47C70300AAA561 /* Cross.png */,
+				5B9A8ED50CE3722800E0231E /* Minus.tiff */,
+				5B9A8ED60CE3722800E0231E /* MinusPressed.tiff */,
+				5B9A8EC80CE3720200E0231E /* Plus.tiff */,
+				5B9A8EC90CE3720200E0231E /* PlusPressed.tiff */,
+				5BE79AB50F650993006FDC6D /* SafariAdBlock.icns */,
+				5BB4EF370DEBE89D00CF9941 /* ToolbarOff.png */,
+				5BB4EF340DEBE80300CF9941 /* ToolbarOn.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5B01F3650CD2649C00FA4A3C /* Constants.h */,
+				5B9A8F100CE37E6600E0231E /* ABButtonBarBackgroundView.h */,
+				5B9A8F110CE37E6600E0231E /* ABButtonBarBackgroundView.m */,
+				5B699F5E0D2CE6C000E7E2D2 /* ABButtonBarButton.h */,
+				5B699F5F0D2CE6C000E7E2D2 /* ABButtonBarButton.m */,
+				5B01F3550CD2613100FA4A3C /* ABController.h */,
+				5B01F3560CD2613100FA4A3C /* ABController.m */,
+				5B522A370CFDE2890051F6C3 /* ABHelper.h */,
+				5B522A380CFDE2890051F6C3 /* ABHelper.m */,
+				5BA3D6510CD1F5CF00DBD48A /* ABPreferences.h */,
+				5BA3D6520CD1F5CF00DBD48A /* ABPreferences.m */,
+				5BA3D66C0CD1F6AB00DBD48A /* ABPreferencesModule.h */,
+				5BA3D66D0CD1F6AB00DBD48A /* ABPreferencesModule.m */,
+				5BF9AE410D3B82A100B87DDB /* ABRuleEditorDelegate.h */,
+				5BF9AE400D3B82A100B87DDB /* ABRuleEditorDelegate.m */,
+				5B22A3190D47CABD00AAA561 /* ABSubscriptionEditorController.h */,
+				5B22A31A0D47CABD00AAA561 /* ABSubscriptionEditorController.m */,
+				5BB5554F0D50AE6600295A82 /* ABToolbarController.h */,
+				5BB555500D50AE6600295A82 /* ABToolbarController.m */,
+				5B22A2910D47B84000AAA561 /* ABURLProtocol.h */,
+				5B22A2920D47B84000AAA561 /* ABURLProtocol.m */,
+				5B999A200EDF2596004747E0 /* ABUserDefaultsController.h */,
+				5B999A210EDF2596004747E0 /* ABUserDefaultsController.m */,
+				5B01F2E10CD2581B00FA4A3C /* ABValueTransformers.h */,
+				5B01F2E20CD2581B00FA4A3C /* ABValueTransformers.m */,
+				5B2998F00DE755B40005CEF3 /* LoadProgressMonitor+ABBlockWebResourceLoadDelegate.h */,
+				5B2998F10DE755B40005CEF3 /* LoadProgressMonitor+ABBlockWebResourceLoadDelegate.m */,
+				5B29996E0DE75C4B0005CEF3 /* LocationChangeHandler+ABBlockWebFrameLoadDelegate.h */,
+				5B29996F0DE75C4B0005CEF3 /* LocationChangeHandler+ABBlockWebFrameLoadDelegate.m */,
+				5B287B350D034FCA00FD360A /* NSArray+ABArray.h */,
+				5B287B360D034FCA00FD360A /* NSArray+ABArray.m */,
+				5B470B6D0E2413EC00EC8565 /* NSBundle+ABBundle.h */,
+				5B470B6E0E2413EC00EC8565 /* NSBundle+ABBundle.m */,
+				5B7F07710CF72728008FD15C /* NSString+ABString.h */,
+				5B7F07720CF72728008FD15C /* NSString+ABString.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BF408120E09CD9700134021 /* Sparkle.framework */,
+				5B35562C0D4F802C00218F4A /* RegexKit.framework */,
+				5BA3D5F90CD1EFF100DBD48A /* WebKit.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5BA3D6540CD1F60800DBD48A /* NSPreferences.h */,
+				5BA3D5550CD1EFA200DBD48A /* Safari.h */,
+				32DBCF630370AF2F00C91783 /* Safari AdBlock_Prefix.pch */,
+				5B03DCBD0D4E376F00EAFBCF /* uninstall.sh */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		5B2961220D6AD64000C6F7AE /* Safari AdBlock Loader */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* LoaderInfo.plist */,
+				5B1D825D0CDBCF5F0096C72B /* Info */,
+				5B2961240D6AD6A300C6F7AE /* SafariAdBlockLoader.h */,
+				5B2961250D6AD6A300C6F7AE /* SafariAdBlockLoader.m */,
+			);
+			name = "Safari AdBlock Loader";
+			sourceTree = "<group>";
+		};
+		5B2961230D6AD64C00C6F7AE /* Safari AdBlock */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+			);
+			name = "Safari AdBlock";
+			sourceTree = "<group>";
+		};
+		5B2961650D6AD99200C6F7AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B2961640D6AD99200C6F7AE /* Safari AdBlock Loader.bundle */,
+				5B29616E0D6ADA7800C6F7AE /* Safari AdBlock.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B2961100D6AD56800C6F7AE /* Safari AdBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B2961150D6AD56900C6F7AE /* Build configuration list for PBXNativeTarget "Safari AdBlock" */;
+			buildPhases = (
+				5B29610D0D6AD56800C6F7AE /* Resources */,
+				5B2961610D6AD8F400C6F7AE /* CopyFiles */,
+				5B29610E0D6AD56800C6F7AE /* Sources */,
+				5B29610F0D6AD56800C6F7AE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Safari AdBlock";
+			productName = "Safari AdBlock";
+			productReference = 5B29616E0D6ADA7800C6F7AE /* Safari AdBlock.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D5B49AC048680CD000E48DA /* Safari AdBlock Loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Safari AdBlock Loader" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				5B2961600D6AD8F400C6F7AE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B2961630D6AD90F00C6F7AE /* PBXTargetDependency */,
+			);
+			name = "Safari AdBlock Loader";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = "Safari AdBlock";
+			productReference = 5B2961640D6AD99200C6F7AE /* Safari AdBlock Loader.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Safari AdBlock" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* Safari AdBlock */;
+			productRefGroup = 5B2961650D6AD99200C6F7AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BB590730E048EAF0003807F /* Safari AdBlock InputManager */,
+				8D5B49AC048680CD000E48DA /* Safari AdBlock Loader */,
+				5B2961100D6AD56800C6F7AE /* Safari AdBlock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B29610D0D6AD56800C6F7AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6513090F65199A0043B788 /* dsa_pub.pem in Resources */,
+				5BE79AB80F6509B9006FDC6D /* SafariAdBlock.icns in Resources */,
+				5B29613D0D6AD82F00C6F7AE /* Minus.tiff in Resources */,
+				5B29613E0D6AD82F00C6F7AE /* InfoPlist.strings in Resources */,
+				5B29613F0D6AD82F00C6F7AE /* Defaults.plist in Resources */,
+				5B2961400D6AD82F00C6F7AE /* Plus.tiff in Resources */,
+				5B2961410D6AD82F00C6F7AE /* PlusPressed.tiff in Resources */,
+				5B2961420D6AD82F00C6F7AE /* MinusPressed.tiff in Resources */,
+				5B2961430D6AD82F00C6F7AE /* ActionPressed.tiff in Resources */,
+				5B2961440D6AD82F00C6F7AE /* Action.tiff in Resources */,
+				5B2961450D6AD82F00C6F7AE /* ButtonBarBackground.tiff in Resources */,
+				5B2961460D6AD82F00C6F7AE /* Subscriptions.plist in Resources */,
+				5B2961470D6AD82F00C6F7AE /* ABPreferences.nib in Resources */,
+				5B2961480D6AD82F00C6F7AE /* ButtonBarButton.tiff in Resources */,
+				5B2961490D6AD82F00C6F7AE /* Cross.png in Resources */,
+				5B29614A0D6AD82F00C6F7AE /* Check.png in Resources */,
+				5B29614B0D6AD82F00C6F7AE /* uninstall.sh in Resources */,
+				5BB4EF350DEBE80300CF9941 /* ToolbarOn.png in Resources */,
+				5BB4EF380DEBE89D00CF9941 /* ToolbarOff.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Build and copy Safari AdBlock";
+			files = (
+				5BE79ABA0F6509BD006FDC6D /* SafariAdBlock.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BB590930E0490580003807F /* Make installer and dmg */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make installer and dmg";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "cp \"$PROJECT_DIR/Resources/Info\" \"$DSTROOT/Library/InputManagers/Safari AdBlock/Info\"\n\nif [ \"$ACTION\" = \"install\" ]; then\n\n\tfind \"$DSTROOT\" -name \".DS_Store\" -exec rm -f {} \\;\n\n\tchown -R root:admin \"$DSTROOT/Library\"\n\tchmod 1775 \"$DSTROOT/Library\"\n\tchmod -R 0755 \"$DSTROOT/Library/InputManagers\"\n\n\tPKG=\"$CONFIGURATION_BUILD_DIR/Safari AdBlock $CURRENT_PROJECT_VERSION.pkg\"\n\tpackagemaker \\\n\t\t--root \"$DSTROOT\"\\\n\t \t--id \"net.sourceforge.SafariAdBlock\"\\\n\t\t--version \"$CURRENT_PROJECT_VERSION\"\\\n\t\t--target 10.5\\\n\t\t--no-recommend\\\n\t\t--title \"Safari AdBlock\"\\\n\t\t--out \"$PKG\"\n\n\t# DMGs are so 1990s\n\t# rm -f \"$CONFIGURATION_BUILD_DIR/Safari_AdBlock_$CURRENT_PROJECT_VERSION.dmg\"\n\t# cp \"$PROJECT_DIR/Installer/Safari AdBlock.dmg\" \"$CONFIGURATION_BUILD_DIR/Safari AdBlock.temp.dmg\"\n\t# hdiutil attach \"$CONFIGURATION_BUILD_DIR/Safari AdBlock.temp.dmg\"\n\t# cp \"$PKG\" \"/Volumes/Safari AdBlock/Install Safari AdBlock.pkg\"\n\t# rm -f \"$CONFIGURATION_BUILD_DIR/Install Safari AdBlock.pkg\"\n\t# hdiutil detach \"/Volumes/Safari AdBlock\"\n\t# hdiutil resize -sectors min \"$CONFIGURATION_BUILD_DIR/Safari AdBlock.temp.dmg\"\n\t# hdiutil convert \"$CONFIGURATION_BUILD_DIR/Safari AdBlock.temp.dmg\" -format UDBZ -o \"$CONFIGURATION_BUILD_DIR/Safari_AdBlock_$CURRENT_PROJECT_VERSION.dmg\"\n\t# rm -f \"$CONFIGURATION_BUILD_DIR/Safari AdBlock.temp.dmg\"\n\nfi";
+		};
+		5BF407F70E09BA2100134021 /* Make appcast */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make appcast";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "if ENV[\"ACTION\"] == \"install\" then\n\tfolder = ENV[\"CONFIGURATION_BUILD_DIR\"]\n\tfile = \"Safari AdBlock #{ENV[\"CURRENT_PROJECT_VERSION\"]}.pkg\"\n\tpath = File.join(folder,file)\n\tkey = `openssl dgst -sha1 -binary < \"#{path}\" | openssl dgst -dss1 -sign \"#{File.join(ENV[\"PROJECT_DIR\"],\"..\", \"safariadblock-private\",\"dsa_priv.pem\")}\" | openssl enc -base64`\n\tkey = key.split(\"\\n\").first\n\tFile.open(\"#{ENV[\"CONFIGURATION_BUILD_DIR\"]}/appcast.rb\", \"w\") { |f|\n\t\ttemp = <<END\nRelease.create(\n  :version => \"#{ENV[\"CURRENT_PROJECT_VERSION\"]}\",\n  :signature => \"#{key}\",\n  :url => \"\",\n  :size => #{File.size(path)},\n  :created_at => #{Time.now},\n  :description => %{\n<ul>\n  <li></li>\n  <li></li>\n</ul>\n})\nEND\n\t\tf << temp\n\t}\nend\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B29610E0D6AD56800C6F7AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B29612E0D6AD82100C6F7AE /* ABButtonBarBackgroundView.m in Sources */,
+				5B29612F0D6AD82100C6F7AE /* ABButtonBarButton.m in Sources */,
+				5B2961300D6AD82100C6F7AE /* ABController.m in Sources */,
+				5B2961310D6AD82100C6F7AE /* ABHelper.m in Sources */,
+				5B2961320D6AD82100C6F7AE /* ABPreferences.m in Sources */,
+				5B2961330D6AD82100C6F7AE /* ABPreferencesModule.m in Sources */,
+				5B2961340D6AD82100C6F7AE /* ABRuleEditorDelegate.m in Sources */,
+				5B2961350D6AD82100C6F7AE /* ABSubscriptionEditorController.m in Sources */,
+				5B2961370D6AD82100C6F7AE /* ABToolbarController.m in Sources */,
+				5B2961380D6AD82100C6F7AE /* ABURLProtocol.m in Sources */,
+				5B2961390D6AD82100C6F7AE /* ABValueTransformers.m in Sources */,
+				5B2998F20DE755B40005CEF3 /* LoadProgressMonitor+ABBlockWebResourceLoadDelegate.m in Sources */,
+				5B2999700DE75C4B0005CEF3 /* LocationChangeHandler+ABBlockWebFrameLoadDelegate.m in Sources */,
+				5B29613B0D6AD82100C6F7AE /* NSArray+ABArray.m in Sources */,
+				5B29613C0D6AD82100C6F7AE /* NSString+ABString.m in Sources */,
+				5B470B6F0E2413EC00EC8565 /* NSBundle+ABBundle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2961260D6AD6A300C6F7AE /* SafariAdBlockLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B2961630D6AD90F00C6F7AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B2961100D6AD56800C6F7AE /* Safari AdBlock */;
+			targetProxy = 5B2961620D6AD90F00C6F7AE /* PBXContainerItemProxy */;
+		};
+		5BB590780E048EE60003807F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5B49AC048680CD000E48DA /* Safari AdBlock Loader */;
+			targetProxy = 5BB590770E048EE60003807F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = "$(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sources/Safari AdBlock_Prefix.pch";
+				INFOPLIST_FILE = Resources/LoaderInfo.plist;
+				INSTALL_PATH = "/Library/InputManagers/Safari AdBlock";
+				PRODUCT_NAME = "Safari AdBlock Loader";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = "$(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sources/Safari AdBlock_Prefix.pch";
+				INFOPLIST_FILE = Resources/LoaderInfo.plist;
+				INSTALL_PATH = "/Library/InputManagers/Safari AdBlock";
+				PRODUCT_NAME = "Safari AdBlock Loader";
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				BUNDLE_LOADER = /Applications/Safari.app/Contents/MacOS/Safari;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "0.4.0 RC1";
+				DSTROOT = "$(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /Library/InputManagers;
+				OTHER_CFLAGS = "-DDEBUG";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-undefined",
+					dynamic_lookup,
+				);
+				PREBINDING = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REGEXKIT_SRCPATH = "$(PROJECT_DIR)/../third-party/regexkit/trunk";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				BUNDLE_LOADER = /Applications/Safari.app/Contents/MacOS/Safari;
+				CURRENT_PROJECT_VERSION = "0.4.0 RC1";
+				DSTROOT = "$(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /Library/InputManagers;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-undefined",
+					dynamic_lookup,
+				);
+				PREBINDING = NO;
+				REGEXKIT_SRCPATH = "$(PROJECT_DIR)/../third-party/regexkit/trunk";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		5B2961130D6AD56900C6F7AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = "$(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Third-party\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /Library/InputManagers;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-undefined",
+					dynamic_lookup,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Safari AdBlock";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		5B2961140D6AD56900C6F7AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = "$(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Third-party\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /Library/InputManagers;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-undefined",
+					dynamic_lookup,
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Safari AdBlock";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		5BB590740E048EAF0003807F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Safari AdBlock InputManager";
+			};
+			name = Debug;
+		};
+		5BB590750E048EAF0003807F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Safari AdBlock InputManager";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Safari AdBlock Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Safari AdBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B2961150D6AD56900C6F7AE /* Build configuration list for PBXNativeTarget "Safari AdBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B2961130D6AD56900C6F7AE /* Debug */,
+				5B2961140D6AD56900C6F7AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BB590760E048ED20003807F /* Build configuration list for PBXAggregateTarget "Safari AdBlock InputManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB590740E048EAF0003807F /* Debug */,
+				5BB590750E048EAF0003807F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

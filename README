@@ -1,0 +1,46 @@
+Safari AdBlock
+http://burgersoftware.com/safariadblock
+
+
+BUILD INSTRUCTIONS
+==================
+
+The following command
+
+	sudo xcodebuild install
+
+builds Safari AdBlock and produces an installer in a disk image located at
+
+	build/Release/Safari_AdBlock_x.x.x.dmg
+	
+
+Alternatively, you can open the Xcode project "Safari AdBlock.xcodeproj" and build it from within Xcode. Note that this method will not produce the installer and the disk image.
+
+
+
+FRAMEWORKS
+==================
+
+If you want to build yourself the third-party frameworks, you need to change the dynamic shared library install names recorded in the Mach-O binary. A quick an easy way to do it is to first build the framework without altering the build settings and then work on the executable file. We will take Sparkle as an example.
+Start by doing
+	
+	otool -L Sparkle.framework/Sparkle
+	
+The output should be something like
+
+	@executable_path/../Frameworks/Sparkle.framework/Versions/A/Sparkle (compatibility version 1.5.0, current version 1.5.0)
+	...
+	
+What we need to do is change @"executable_path" to "@loader_path" so that when Safari AdBlock is loaded, it looks for the framework inside its bundle and not inside Safari's bundle. It is done with the command
+
+	install_name_tool -id "@loader_path/../Frameworks/Sparkle.framework/Versions/A/Sparkle" Sparkle.framework/Sparkle
+
+Finally, verify that it worked:
+
+	otool -L Sparkle.framework/Sparkle
+
+now outputs
+
+	@loader_path/../Frameworks/Sparkle.framework/Versions/A/Sparkle (compatibility version 1.5.0, current version 1.5.0)
+	...
+	...

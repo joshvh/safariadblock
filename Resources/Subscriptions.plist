@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>General and english ads</string>
+		<key>SubscriptionOrder</key>
+		<integer>1</integer>
+		<key>SubscriptionLanguage</key>
+		<string>en</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://safariadblock.sourceforge.net/list.txt</string>
+			<string>http://easylist.adblockplus.org/easyelement+easylist.txt</string>
+		</array>
+	</dict>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>Deutsche Werbung</string>
+		<key>SubscriptionOrder</key>
+		<integer>2</integer>
+		<key>SubscriptionLanguage</key>
+		<string>de</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://chewey.de/mozilla/data/adblock.txt</string>
+		</array>
+	</dict>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>Publicités françaises</string>
+		<key>SubscriptionOrder</key>
+		<integer>3</integer>
+		<key>SubscriptionLanguage</key>
+		<string>fr</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://pirlouy42.free.fr/Firefox/Adblock_PL.txt</string>
+		</array>
+	</dict>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>Hungarian ads</string>
+		<key>SubscriptionOrder</key>
+		<integer>4</integer>
+		<key>SubscriptionLanguage</key>
+		<string>hu</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://pete.teamlupus.hu/hufilter.txt</string>
+		</array>
+	</dict>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>Korean ads</string>
+		<key>SubscriptionOrder</key>
+		<integer>5</integer>
+		<key>SubscriptionLanguage</key>
+		<string>ko</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://brianyi.com/corset.txt</string>
+		</array>
+	</dict>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>Romanian ads</string>
+		<key>SubscriptionOrder</key>
+		<integer>6</integer>
+		<key>SubscriptionLanguage</key>
+		<string>ro</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://www.picpoc.ro/menetzrolist.txt</string>
+		</array>
+	</dict>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>Russian ads</string>
+		<key>SubscriptionOrder</key>
+		<integer>7</integer>
+		<key>SubscriptionLanguage</key>
+		<string>ru</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://denis-ovs.narod.ru/adblock.txt</string>
+		</array>
+	</dict>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>Ukranian ads</string>
+		<key>SubscriptionOrder</key>
+		<integer>8</integer>
+		<key>SubscriptionLanguage</key>
+		<string>uk</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://adblock.oasis.org.ua/banlist.txt</string>
+		</array>
+	</dict>
+	<dict>
+		<key>SubscriptionName</key>
+		<string>Chinese ads</string>
+		<key>SubscriptionOrder</key>
+		<integer>9</integer>
+		<key>SubscriptionLanguage</key>
+		<string>zh</string>
+		<key>SubscriptionURLs</key>
+		<array>
+			<string>http://www.anetcity.com/adblock.txt</string>
+		</array>
+	</dict>
+</array>
+</plist>
