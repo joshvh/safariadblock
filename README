@@ -2,6 +2,14 @@ Safari AdBlock
 http://burgersoftware.com/safariadblock
 
 
+INTRODUCTION
+==================
+
+Safari AdBlock blocks ads in Safari.
+It works as an InputManager to inject code in Safari and uses the Adblock Plus <http://adblockplus.org> filters.
+
+
+
 BUILD INSTRUCTIONS
 ==================
 
@@ -9,12 +17,12 @@ The following command
 
 	sudo xcodebuild install
 
-builds Safari AdBlock and produces an installer in a disk image located at
+builds Safari AdBlock and produces an installer located at
 
-	build/Release/Safari_AdBlock_x.x.x.dmg
+	build/Release/Safari AdBlock x.x.x.pkg
 	
 
-Alternatively, you can open the Xcode project "Safari AdBlock.xcodeproj" and build it from within Xcode. Note that this method will not produce the installer and the disk image.
+Alternatively, you can open the Xcode project "Safari AdBlock.xcodeproj" and build it from within Xcode. Note that this method will not produce the installer.
 
 
 
